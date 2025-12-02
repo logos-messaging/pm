@@ -13,3 +13,11 @@ assignees: ''
 ## Summary
 
 <!-- Provide a high level summary of the Deliverable -->
+
+### Checklist
+
+- [ ] Specs: link to specs and/or API definition
+- [ ] Code: link to GitHub issues/PRs/Epic
+- [ ] Dogfood: link to dogfooding session/artefact
+- [ ] Docs: links to README.md or logos dosc
+- [ ] C-API: Ensure C-API is usable
