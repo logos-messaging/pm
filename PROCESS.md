@@ -20,17 +20,14 @@ See [Waku Methodology](https://www.notion.so/Waku-Mission-and-Methodology-1a58f9
 
 The Waku team is currently organized in the following subteams:
 
-- Core Research
-- nwaku
-- js-waku
-- Chat/App Dev
-- Chat/App Research
-- Business Dev
+- Nim: Looking after [logos-messaging-nim](https://github.com/logos-messaging/logos-messaging-nim/), [nim-sds](https://github.com/logos-messaging/nim-sds), and other components below the Reliable Channel API.
+- Chat: Looking after the [Chat SDK](https://github.com/logos-messaging/nim-chat-poc).
+- Messaging Logos Core: ensuring messaging libraries are available as Logos Core modules.
 
 ## Documents
 
-- [Waku FURPS](https://www.notion.so/Waku-FURPS-1498f96fb65c803faedef2a591c22c00)
-- [Waku Milestones](https://roadmap.logos.co/waku/waku-milestones)
+- [Logos Messaging FURPS](https://roadmap.logos.co/messaging/furps)
+- [Logos Messaging Milestones](https://roadmap.logos.co/messaging/milestones)
 
 ## Terminology and Scope
 
@@ -74,8 +71,10 @@ For example:
 
 To track the work to achieve these FURPS, two deliverables should be created: 
 
-1. [nwaku] Support error code in light push: Implement Light Push FURPS F1, S1.
-2. [js-waku] Support error code in light push: Implement Light Push FURPS F1, S2.
+1. `[nim] Support error code in light push: Implement Light Push FURPS F1, S1.`
+2. `[js] Support error code in light push: Implement Light Push FURPS F1, S2.`
+
+Note: `[chat]` and `[nim]` are the current valid teams.
 
 When the **work** is not related to software behaviour (e.g. a contributor guide, some BD activities),
 then a deliverable is used to define the expected output, without referring to specific FURPS.
@@ -105,12 +104,12 @@ Here are some rules to ensure the efficacy of our process.
 What is not explicitly defined is left to the subteam's choice.
 
 A _Milestone_:
-- MUST have a GitHub Milestone in https://github.com/waku-org/pm repo, to which relevant _FURPS_ statements or _Deliverables_ are added.
+- MUST have a GitHub Milestone in https://github.com/logos-messaging/pm repo, to which relevant _FURPS_ statements or _Deliverables_ are added.
 - MUST have an *estimated date of completion*
 - MUST have an effort estimate, stating how many CCs are needed to work on this for a given half-year (e.g. one research, half an engineer)
 
 A _Deliverable_:
-- MUST be defined as an issue in the https://github.com/waku-org/pm repo.
+- MUST be defined as an issue in the https://github.com/logos-messaging/pm repo.
 - MUST be included in its parent _Milestone_.
 - MUST have an _Output_ section in the description detailing the result of work of the Deliverable, this may be a list of FURPS.
 - If tracking FURPS, the FURPS only belong to one feature aka FURPS set.
@@ -143,5 +142,5 @@ Finally, for _Tasks_ or _PRs_ that do not belong to a _Deliverable_:
 
 - Waku Lead: @fryorcraken
 - Program Manager: @chair28980
-- Team Lead: @plopezlpz @Ivansete-status @jm-clius @weboko @jazzz
-- VAC PoC: @jm-clius, @stubbsta for Vac-DST
+- Team Lead: @Ivansete-status @jazzz
+- DST/QA PoC: @stubbsta
